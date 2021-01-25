@@ -34,8 +34,10 @@ int main()
 		cin >> last;
 		cout << "\n\t\tLet's Have Fun With Numbers! Enter a number to Square, Cube, and raise to the 4th Power: ";
 		cin >> enteredNumber;
-		cout << "\n\t\t\tNumber\tSquare\tCube\t4th Power";
-		cout << "\n\t\t\t~~~~~~\t~~~~~~\t~~~~~\t~~~~~~~~~\t";
+		cout <<
+			"\n\t\t\tNumber\tSquare\tCube\t4th Power";
+		cout 
+			<< "\n\t\t\t~~~~~~\t~~~~~~\t~~~~~\t~~~~~~~~~\t";
 		//
 		/*int i = enteredNumber;*/
 		//
@@ -44,20 +46,31 @@ int main()
 			square = pow(enteredNumber, 2.0);
 			cube = pow(enteredNumber, 3.0);
 			fourth = pow(enteredNumber, 4.0);
-			cout << "\n\t\t\t" << enteredNumber << "\t" << square << "\t" << cube << "\t" << fourth << endl;
+			cout << "\n\t\t\t" 
+				<< enteredNumber
+				<< "\t" << square << 
+				"\t" << cube << "\t" 
+				<< fourth << endl;
+			// this looks better and you cant tell me otherwise.
 			enteredNumber += 5;
 		}
 		full = first + " " + last;
 		
-		cout << "\n\t\tWould you like to run the program again, " << full << "? (Y/N): ";
+		cout << "\n\t\tWould you like to run the program again, " 
+			<< full 
+			<< "? (Y/N): ";
 		cin >> userLoop;
 		userLoop = toupper(userLoop);
 
 		
 		//		//		//		//
 	} while (userLoop == 'Y');
-	cout << "\n\t\t\t\tThank you for running this program, " << full << "!!!";
-	cout << "\n\t\t\tYour contribution assists me in becoming the best programmer I can be :)" << endl;
+	cout << 
+		"\n\t\t\t\tThank you for running this program, "
+		<< full << "!!!";
+	cout 
+		<< "\n\t\t\tYour contribution assists me in becoming the best programmer I can be :)" 
+		<< endl;
 	system("pause");
 	return 0;
 }
